@@ -33,18 +33,18 @@ def main():
     # following lines create boxes in which user can enter data required to make prediction 
     #tau1,tau2,tau3,tau4,p1,p2,p3,p4,g1,g2,g3,g4
     st.header("Machine Learning-Based Model for Prediction of Stability in Smart Grid")
-    tau1 = st.number_input('Insert tau1 Value between (0.5 , 10)',value=0) 
-    tau2 = st.number_input('Insert tau2 Value between (0.5 , 10)',value=0)
-    tau3 = st.number_input('Insert tau3 Value between (0.5 , 10)',value=0)
-    tau4 = st.number_input('Insert tau4 Value between (0.5 , 10)',value=0)
-    p1 = st.number_input('Insert p1 Value between (1.5 , 6)',value=0)
-    p2 = st.number_input('Insert p2 Value between (-0.5 , -2)',value=0)
-    p3 = st.number_input('Insert p3 Value between (-0.5 , -2)',value=0)
-    p4 = st.number_input('Insert p4 Value between (-0.5 , -2)',value=0)
-    g1 = st.number_input('Insert g1 Value between (0,1)',value=0) 
-    g2 = st.number_input('Insert g2 Value between (0,1)',value=0) 
-    g3 = st.number_input('Insert g3 Value between (0,1)',value=0) 
-    g4 = st.number_input('Insert g3 Value between (0,1)',value=0) 
+    tau1 = st.number_input('Insert tau1 Value between (0.5 , 10)',min_value=0.500793	,max_value=9.999469) 
+    tau2 = st.number_input('Insert tau2 Value between (0.5 , 10)',min_value=0.500141	,max_value=9.999837)
+    tau3 = st.number_input('Insert tau3 Value between (0.5 , 10)',min_value=0.500141		,max_value=9.999837	)
+    tau4 = st.number_input('Insert tau4 Value between (0.5 , 10)',min_value=0.500141	,max_value=9.999837	)
+    p1 = st.number_input('Insert p1 Value between (1.5 , 6)',min_value=1.582590	,max_value=5.864418)
+    p2 = st.number_input('Insert p2 Value between (-0.5 , -2)',min_value=-1.999945,max_value=-0.500025)
+    p3 = st.number_input('Insert p3 Value between (-0.5 , -2)',min_value=-1.999945	,max_value=-0.500025)
+    p4 = st.number_input('Insert p4 Value between (-0.5 , -2)',min_value=-1.999945	,max_value=-0.500025)
+    g1 = st.number_input('Insert g1 Value between (0,1)',min_value=0.050009	,max_value=0.999937) 
+    g2 = st.number_input('Insert g2 Value between (0,1)',min_value=0.050028	,max_value=0.999982	) 
+    g3 = st.number_input('Insert g3 Value between (0,1)',min_value=0.050028	,max_value=0.999982	) 
+    g4 = st.number_input('Insert g3 Value between (0,1)',min_value=0.050028	,max_value=0.999982	) 
     result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
